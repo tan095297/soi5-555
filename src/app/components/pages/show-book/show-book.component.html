@@ -1,0 +1,76 @@
+<div class="row mt-3">
+    <div class="col-md-12" style="text-align: right;">
+        <a routerLink="/book/new" class="btn btn-success">Add new book</a>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="h1">All Products</div>
+    <div class="col-md-12 mt-2">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>รหัสหนังสือ</th>
+                    <th>ชื่อหนังสือ</th>
+                    <th>ชื่อผู้แต่ง</th>
+                    <th>สำนักพิมพ์</th>
+                    <th>ราคา</th>
+                    <th>จำนวนวันที่ยืมได้ นักเรียน</th>
+                    <th>จำนวนวันที่ยืมได้ ครู</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                 <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   
+                   
+                    <td>
+                        <a class="btn btn-success btn-sm"  routerLink="/book/new" >
+                           
+                            Add
+                        </a> &nbsp;
+                        <a class="btn btn-info btn-sm" >
+                            <!-- routerLink="/product/edit/{{prd._id}}" -->
+                            Edit
+                        </a> &nbsp;
+                        <a class="btn btn-danger btn-sm" >
+                            <!-- (click)="deleteProduct(prd._id)" -->
+                            Delete
+                        </a>&nbsp;
+                       
+                    </td>
+                </tr>
+
+
+
+                <!-- <tr *ngFor="let prd of products; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{prd.name}}</td>
+                    <td>{{prd.price}}</td>
+                    <td>{{prd.unit_in_stock}}</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"  routerLink="/product/detail/{{prd._id}}">
+                            Detail
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn btn-info btn-sm" routerLink="/product/edit/{{prd._id}}">
+                            Edit
+                        </a> &nbsp;
+                        <a class="btn btn-danger btn-sm" (click)="deleteProduct(prd._id)">
+                            Delete
+                        </a>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</div>
